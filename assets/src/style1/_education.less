@@ -1,0 +1,36 @@
+// main: style1.less
+
+#education {
+    ul {
+        li {
+            display: grid;
+            grid-template-areas: 'years name' 'years text';
+            grid-column-gap: 1em;
+            grid-template-columns: 100px auto;
+            margin-bottom: 1em;
+            transition: background-color 0.25s;
+
+            &:hover {
+                background-color: @paperColor;
+            }
+
+            .uni-name {
+                grid-area: name;
+                font-weight: bold;
+            }
+
+            .uni-years {
+                grid-area: years;
+								vertical-align: middle;
+								margin-left: 20px;
+								margin-top: 10px;
+                //font-size: 30px;
+                //line-height: 32px;
+            }
+
+            .uni-text {
+                grid-area: text;
+            }
+        }
+    }
+}

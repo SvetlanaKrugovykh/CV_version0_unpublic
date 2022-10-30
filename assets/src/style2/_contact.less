@@ -1,0 +1,38 @@
+// main: style2.less
+
+#address,
+#contact {
+	background-color: @baseFontColor;
+	color: @baseFontContrastColor;
+
+	h3 {
+		display: none;
+	}
+}
+
+#address {
+	margin-right: -10px;
+
+	@media (max-width: @breakpointMobile) {
+		margin-right: 0;
+		margin-bottom: -20px;
+		text-align: center;
+	}
+}
+
+#contact {
+	text-align: right;
+
+	a {
+		color: @baseFontContrastColor;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@media (max-width: @breakpointMobile) {
+		text-align: center;
+	}
+}

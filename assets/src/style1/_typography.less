@@ -1,0 +1,44 @@
+
+// main: style1.less
+
+
+@baseFontSize: 16px;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: @baseFontSize;
+	line-height: 1.3em;
+	color: @baseFontColor;
+}
+
+h1 {
+	font-size: @baseFontSize * 1.7;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: @baseFontSize * 1.2;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: @baseFontSize * 1.1;
+	font-weight: bold;
+	margin: 1em 0;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+
+a {
+	text-decoration: none;
+	color: @baseLinkColor;
+
+	&:hover {
+		text-decoration: underline;
+		color: @hoverLinkColor;
+	}
+}

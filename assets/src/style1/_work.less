@@ -1,0 +1,47 @@
+// main: style1.less
+
+#work {
+    ul {
+        li {
+            display: grid;
+            grid-template-areas: 'years name' 'years text';
+            grid-column-gap: 1em;
+            grid-template-columns: 100px auto;
+            position: relative;
+
+            .work-name {
+                grid-area: name;
+                font-weight: bold;
+                padding-top: 1em;
+            }
+
+            .work-years {
+                grid-area: years;
+                padding-top: 1em;
+                padding-bottom: 1em;
+                border-right: 1px solid @baseFontColor;
+
+                &::after {
+                    content: " ";
+                    position: absolute;
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    left: 95px;
+                    top: 22px;
+                    background-color: @baseFontColor;
+                    transition: background-color 0.25s;
+                }
+            }
+
+            &:hover .work-years::after {
+                background-color: @chartHighlightColor;
+            }
+
+            .work-text {
+                grid-area: text;
+                padding-bottom: 1em;
+            }
+        }
+    }
+}

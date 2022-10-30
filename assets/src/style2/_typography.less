@@ -1,0 +1,33 @@
+// main: style2.less
+
+@baseFontSize: 16px;
+
+body {
+	font-family: 'Libre Baskerville', serif;
+	font-size: @baseFontSize;
+	line-height: 1.3em;
+	color: @baseFontColor;
+}
+
+h3 {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: @baseFontSize * 2;
+	line-height: @baseFontSize * 2;
+	background-color: @baseFontColor;
+	color: @baseFontContrastColor;
+	margin: -1rem -1rem 1rem -1rem;
+	padding: 10px;
+
+	@media (max-width: @breakpointMobile) {
+		font-size: @baseFontSize * 1.5;
+		line-height: @baseFontSize * 1.5;
+	}
+}
+
+p {
+	margin-bottom: 1em;
+	font-size: @baseFontSize * 0.8;
+}

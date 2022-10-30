@@ -1,0 +1,31 @@
+// main: style2.less
+
+#photo {
+	border: none;
+	padding: 0;
+
+	img {
+		// filter: grayscale();
+		width: 100%;
+	}
+}
+
+h1 {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: @baseFontColor;
+	color: @baseFontContrastColor;
+	font-weight: bold;
+	font-size: @baseFontSize * 2;
+	line-height: @baseFontSize * 2;
+	padding: 1rem;
+	text-transform: uppercase;
+
+	@media (max-width: @breakpointMobile) {
+		font-size: @baseFontSize * 1.5;
+		line-height: @baseFontSize * 1.5;
+	}
+}

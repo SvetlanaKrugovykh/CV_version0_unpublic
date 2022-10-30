@@ -1,0 +1,54 @@
+/* Style all font awesome icons */
+.fa {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-right: 5px;
+	font-size: 15px;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+	opacity: 0.7;
+}
+
+/* Style all font awesome icons */
+.foot {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	margin: 5px 2px;
+}
+
+/* Add a hover effect if you want */
+.foot:hover {
+	opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+	background: #3b5998;
+	color: white;
+}
+
+/* Telegram */
+.fa-telegram {
+	background: #60c7da;
+	color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}

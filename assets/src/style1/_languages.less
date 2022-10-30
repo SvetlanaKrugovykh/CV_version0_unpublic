@@ -1,0 +1,28 @@
+// main: style1.less
+
+#languages {
+    ul {
+        position: relative;
+
+        .grading {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+        }
+
+        li:nth-child(1)::after {
+            content: "\2659 \2659 \2659 \2659 ";
+            .grading;
+        }
+
+        li:nth-child(2)::after {
+            content: "\2659 \2659 \2659 \2659 \2659";
+            .grading;
+        }
+
+        li:nth-child(3)::after {
+            content: "\2615 \2615";
+            .grading;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+// main: style1.less
+
+@breakpointMobile: 768px;
+
+* {
+	box-sizing: border-box;
+}
+
+.tumbler {
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.footer {
+	box-sizing: border-box;
+	text-align: center;
+	color: white;
+}
+
+body {
+	background-color: @backgroundBodyColor;
+}
+
+
+main {
+	width: 768px;
+	margin: 40px auto;
+	background-color: @paperColor;
+	box-shadow: 5px 5px 20px;
+	padding: 40px;
+
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 260px auto;
+	grid-template-areas:
+		'header header'
+		'contact aboutme'
+		'address aboutme'
+		'languages aboutme'
+		'skills education'
+		'hobbies work'
+	;
+
+	@media (max-width: @breakpointMobile) {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		grid-template-columns: auto;
+		grid-template-rows: 370px auto;
+		grid-template-areas:
+			'header'
+			'contact'
+			'address'
+			'aboutme'
+			'languages'
+			'skills'
+			'education'
+			'work'
+			'hobbies'
+		;
+	}
+}
+
+
+h1 {
+	grid-area: header;
+}
+
+h2 {
+	grid-area: header;
+}
+
+#contact {
+	grid-area: contact;
+}
+
+#address {
+	grid-area: address;
+}
+
+#about-me {
+	grid-area: aboutme;
+}
+
+#education {
+	grid-area: education;
+}
+
+#work {
+	grid-area: work;
+}
+
+#skills {
+	grid-area: skills;
+}
+
+#languages {
+	grid-area: languages;
+}
+
+#hobbies {
+	grid-area: hobbies;
+}
+
+section {
+	padding: 1em;
+}
+
