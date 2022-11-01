@@ -1,0 +1,300 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.lb1 {
+	margin: 2em;
+}
+
+#highload1 {
+	display: none;
+}
+
+#highload1 + .lb1,
+#highload1 + .lb1::before,
+#highload1 + .lb1::after {
+	transition: all 0.3s;
+}
+
+#highload1 + .lb1 {
+	display: inline-block;
+	position: relative;
+	width: 140px;
+	height: 60px;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+#highload1 + .lb1::before {
+	display: block;
+	content: attr(data-offlabel);
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	color: black;
+	font-family: "Open Sans", sans-serif;
+	font-size: 19px;
+}
+
+#highload1 + .lb1::after {
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 54px;
+	height: 54px;
+	background-color: white;
+}
+
+#highload1:checked + .lb1::before {
+	content: attr(data-onlabel);
+	left: 16px;
+	right: auto;
+	color: #fff;
+}
+
+#highload1:checked + .lb1::after {
+	left: 83px;
+	background-color: #f7f7f7;
+}
+
+#highload1 + .lb1 {
+	background-color: #ccc;
+}
+
+#highload1:checked + .lb1 {
+	background-color: darkgrey;
+}
+
+#highload1:checked + .lb1::before {
+	color: #fff;
+}
+/* Style all font awesome icons */
+.fa {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-right: 5px;
+	font-size: 15px;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+	opacity: 0.7;
+}
+
+/* Style all font awesome icons */
+.foot {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	margin: 5px 2px;
+}
+
+/* Add a hover effect if you want */
+.foot:hover {
+	opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+	background: #3b5998;
+	color: white;
+}
+
+/* Telegram */
+.fa-telegram {
+	background: #60c7da;
+	color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+body{font-family:'Open Sans',sans-serif;font-size:16px;line-height:1.3em;color:#333333}h1{font-size:27.2px;font-weight:bold;text-transform:uppercase}h2{font-size:19.2px;font-weight:bold}h3{font-size:17.6px;font-weight:bold;margin:1em 0}p{margin-bottom:1em}a{text-decoration:none;color:#b60a0a}a:hover{text-decoration:underline;color:#db8585}*{box-sizing:border-box}.tumbler{box-sizing:border-box;text-align:center}.footer{box-sizing:border-box;text-align:center;color:white}body{background-color:#e7e7e7}main{width:768px;margin:40px auto;background-color:#ffffff;box-shadow:5px 5px 20px;padding:40px;position:relative;display:grid;grid-template-columns:1fr 2fr;grid-template-rows:260px auto;grid-template-areas:'header header' 'contact aboutme' 'address aboutme' 'languages aboutme' 'skills education' 'hobbies work'}@media (max-width:768px){main{margin:0;padding:0;width:100%;grid-template-columns:auto;grid-template-rows:370px auto;grid-template-areas:'header' 'contact' 'address' 'aboutme' 'languages' 'skills' 'education' 'work' 'hobbies'}}h1{grid-area:header}h2{grid-area:header}#contact{grid-area:contact}#address{grid-area:address}#about-me{grid-area:aboutme}#education{grid-area:education}#work{grid-area:work}#skills{grid-area:skills}#languages{grid-area:languages}#hobbies{grid-area:hobbies}section{padding:1em}main::before{position:absolute;content:" ";display:block;width:768px;height:170px;background-color:#484e5e;top:0;left:0}@media (max-width:768px){main::before{width:100%}}h1{display:block;width:440px;height:150px;background-color:#ffffff;position:absolute;box-shadow:5px 5px 20px;top:66px;left:190px;text-align:center;padding-top:40px;padding-left:20px}@media (max-width:768px){h1{left:5px;right:5px;width:auto;box-shadow:none;top:240px;padding-left:0}}h2{display:block;width:440px;height:150px;position:absolute;top:66px;left:205px;text-align:center;padding-top:90px;padding-left:20px}@media (max-width:768px){h2{left:5px;right:5px;width:auto;box-shadow:none;top:240px;padding-left:0}}#photo{display:block;position:absolute;width:170px;height:170px;background-image:url("../img/pexels-jeffrey-reed-769773.jpg");background-size:cover;background-position-y:-20px;left:101px;top:95px;box-shadow:5px 5px 20px;border-radius:50%;border:10px solid #ffffff}#photo img{display:none}@media (max-width:768px){#photo{left:calc(50% - 90px);top:70px}}section{position:relative;transition:background-color .5s}section h3::after{content:" ";display:block;width:60%;height:2px;background-color:#ffa500;position:absolute;transform:translateX(-50%) scaleX(0);transition:transform .5s}section:hover{background-color:#ffffed}section:hover h3::after{transform:translateX(0) scaleX(1)}#education ul li{display:grid;grid-template-areas:'years name' 'years text';grid-column-gap:1em;grid-template-columns:100px auto;margin-bottom:1em;transition:background-color .25s}#education ul li:hover{background-color:#ffffff}#education ul li .uni-name{grid-area:name;font-weight:bold}#education ul li .uni-years{grid-area:years;vertical-align:middle;margin-left:20px;margin-top:10px}#education ul li .uni-text{grid-area:text}#work ul li{display:grid;grid-template-areas:'years name' 'years text';grid-column-gap:1em;grid-template-columns:100px auto;position:relative}#work ul li .work-name{grid-area:name;font-weight:bold;padding-top:1em}#work ul li .work-years{grid-area:years;padding-top:1em;padding-bottom:1em;border-right:1px solid #333333}#work ul li .work-years::after{content:" ";position:absolute;display:block;width:10px;height:10px;left:95px;top:22px;background-color:#333333;transition:background-color .25s}#work ul li:hover .work-years::after{background-color:#ffa500}#work ul li .work-text{grid-area:text;padding-bottom:1em}#languages ul{position:relative}#languages ul .grading{display:inline-block;position:absolute;right:0}#languages ul li:nth-child(1)::after{content:"\2659 \2659 \2659 \2659 ";display:inline-block;position:absolute;right:0}#languages ul li:nth-child(2)::after{content:"\2659 \2659 \2659 \2659 \2659";display:inline-block;position:absolute;right:0}#languages ul li:nth-child(3)::after{content:"\2615 \2615";display:inline-block;position:absolute;right:0}#skills ul{position:relative}#skills ul li{border-bottom:4px solid #c0c0c0;padding-bottom:3px;margin-bottom:1em}#skills ul li::after{content:" ";display:block;height:8px;width:75%;position:relative;top:9px;background-color:#ffa500;border-bottom-left-radius:4px;border-top-left-radius:4px;transform:translateX(0) scaleX(1);transition:transform .5s}#skills ul li:hover::after{transform:translateX(5%) scaleX(1.1)}#skills ul li:nth-child(1)::after{width:75%}#skills ul li:nth-child(2)::after{width:30%}#skills ul li:nth-child(3)::after{width:75%}#hobbies ul li{display:inline-block;border:1px solid #333333;padding:5px;margin:0 5px 5px 0;font-size:11px;border-radius:5px}#contact div{margin-bottom:.5em}#contact .icon{content:" ";display:inline-block;width:1rem;height:1rem;margin-right:1em;vertical-align:-0.1em}#contact #phone1::before,#contact #phone2::before{content:" ";display:inline-block;width:1rem;height:1rem;margin-right:1em;vertical-align:-0.1em;background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>')}#contact #email::before{content:" ";display:inline-block;width:1rem;height:1rem;margin-right:1em;vertical-align:-0.1em;background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>')}/*# sourceMappingURL=./style1.min.css.map */
