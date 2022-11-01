@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcaxY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKnZrc3Hgbbcjq75U4uslyuy4kn0pNe.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTjYw.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.lb1 {
+	margin: 2em;
+}
+
+#highload1 {
+	display: none;
+}
+
+#highload1 + .lb1,
+#highload1 + .lb1::before,
+#highload1 + .lb1::after {
+	transition: all 0.3s;
+}
+
+#highload1 + .lb1 {
+	display: inline-block;
+	position: relative;
+	width: 140px;
+	height: 60px;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+#highload1 + .lb1::before {
+	display: block;
+	content: attr(data-offlabel);
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	color: black;
+	font-family: "Open Sans", sans-serif;
+	font-size: 19px;
+}
+
+#highload1 + .lb1::after {
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 54px;
+	height: 54px;
+	background-color: white;
+}
+
+#highload1:checked + .lb1::before {
+	content: attr(data-onlabel);
+	left: 16px;
+	right: auto;
+	color: #fff;
+}
+
+#highload1:checked + .lb1::after {
+	left: 83px;
+	background-color: #f7f7f7;
+}
+
+#highload1 + .lb1 {
+	background-color: #ccc;
+}
+
+#highload1:checked + .lb1 {
+	background-color: darkgrey;
+}
+
+#highload1:checked + .lb1::before {
+	color: #fff;
+}
+/* Style all font awesome icons */
+.fa {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-right: 5px;
+	font-size: 15px;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+	opacity: 0.7;
+}
+
+/* Style all font awesome icons */
+.foot {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	margin: 5px 2px;
+}
+
+/* Add a hover effect if you want */
+.foot:hover {
+	opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+	background: #3b5998;
+	color: white;
+}
+
+/* Telegram */
+.fa-telegram {
+	background: #60c7da;
+	color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+body{font-family:'Libre Baskerville',serif;font-size:16px;line-height:1.3em;color:#333333}h3{display:block;text-align:center;text-transform:uppercase;font-weight:bold;font-size:32px;line-height:32px;background-color:#333333;color:#fffee0;margin:-1rem -1rem 1rem -1rem;padding:10px}@media (max-width:768px){h3{font-size:24px;line-height:24px}}p{margin-bottom:1em;font-size:12.8px}*{box-sizing:border-box}.tumbler{box-sizing:border-box;text-align:center}.footer{box-sizing:border-box;text-align:center;background-color:black;color:white}main{padding:.5em;width:768px;margin:40px auto;background-color:#fffee0;position:relative;display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto;grid-gap:.5em;grid-template-areas:'job job job' 'address address contact' 'photo photo education' 'photo photo work' 'languages aboutme aboutme' 'skills skills hobbies'}@media (max-width:768px){main{margin:0;width:100%;grid-template-columns:auto;grid-template-areas:'job' 'photo' 'aboutme' 'education' 'work' 'languages' 'skills' 'hobbies' 'address' 'contact'}}h1{grid-area:photo}h2{grid-area:job}#contact{grid-area:contact}#address{grid-area:address}#photo{grid-area:photo}#about-me{grid-area:aboutme}#education{grid-area:education}#work{grid-area:work}#skills{grid-area:skills}#languages{grid-area:languages}#hobbies{grid-area:hobbies}section{padding:1rem;border:1px solid #333333}h2{background-color:#ff6161;color:#fffee0;font-weight:bold;font-size:48px;line-height:62.4px;text-align:center;padding:1rem;text-transform:uppercase}@media (max-width:768px){h2{font-size:28.8px;line-height:28.8px}}#address,#contact{background-color:#333333;color:#fffee0}#address h3,#contact h3{display:none}#address{margin-right:-10px}@media (max-width:768px){#address{margin-right:0;margin-bottom:-20px;text-align:center}}#contact{text-align:right}#contact a{color:#fffee0;text-decoration:none}#contact a:hover{text-decoration:underline}@media (max-width:768px){#contact{text-align:center}}#photo{border:none;padding:0}#photo img{width:100%}h1{position:absolute;z-index:1;bottom:0;width:100%;text-align:center;background-color:#333333;color:#fffee0;font-weight:bold;font-size:32px;line-height:32px;padding:1rem;text-transform:uppercase}@media (max-width:768px){h1{font-size:24px;line-height:24px}}ul li{display:flex;flex-direction:column;margin-bottom:1em}ul li .uni-name{font-weight:bold}ul li .uni-years{font-style:italic}ul li .uni-text{font-size:12.8px}#work{border:none;padding:0}#work h3{display:none}#work ul{display:flex;flex-direction:column;height:100%;justify-content:space-between}#work ul li{border:1px solid #333333;padding:0 1em;margin-bottom:0}#work ul li .work-name{order:1;color:#333333;font-size:24px;text-align:center;font-variant:small-caps;font-weight:bold;padding:1em 0}#work ul li .work-text{order:2;font-size:12.8px}#work ul li .work-years{order:3;text-align:right;font-style:italic;font-weight:bold;font-size:14.4px}@media (max-width:768px){#work ul li{margin-bottom:.5em}}#languages h3{background:none;color:#ff6161}#languages ul{position:relative}#languages ul .grading{display:inline-block;position:absolute;right:0;font-size:32px}#languages ul li:nth-child(1)::after{content:"\2022 \2022 \2022 \2022 ";display:inline-block;position:absolute;right:0;font-size:32px}#languages ul li:nth-child(2)::after{content:"\2022 \2022 \2022 \2022 \2022";display:inline-block;position:absolute;right:0;font-size:32px}#languages ul li:nth-child(3)::after{content:"\2022 \2022";display:inline-block;position:absolute;right:0;font-size:32px}#skills ul li{text-align:right;width:100%;padding-right:60%;position:relative}#skills ul li::before{content:" ";display:inline-block;height:4px;width:50%;left:50%;top:8px;position:absolute;background-color:#333333}#skills ul li::after{content:" ";display:inline-block;height:6px;width:25%;left:50%;top:7px;position:absolute;background-color:#ff6161}#skills ul li:nth-child(1)::after{width:40%}#skills ul li:nth-child(2)::after{width:15%}#skills ul li:nth-child(3)::after{width:25%}#hobbies h3{background:none;color:#333333;text-shadow:2px 2px 2px #ff6161}#hobbies ul{text-align:center}#hobbies ul li{display:inline;text-transform:lowercase;padding:.5rem}#hobbies ul li:nth-child(1){font-size:12.8px;opacity:.5}#hobbies ul li:nth-child(2){font-size:16px;opacity:.6}#hobbies ul li:nth-child(3){font-size:28.8px;opacity:1}#hobbies ul li:nth-child(4){font-size:22.4px;opacity:.8}#hobbies ul li:nth-child(5){font-size:19.2px;opacity:.7}#hobbies ul li:nth-child(6){font-size:16px;opacity:.6}/*# sourceMappingURL=./style2.min.css.map */
